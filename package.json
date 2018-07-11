@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --recursive ./v*/tests/",
     "start": "node Server.js",
-    "build": "npm run test && npm run start"
+    "build": "npm install && npm run test && npm run start"
   },
   "author": "Matheus Neiva (mneiva@ciandt.com)",
   "license": "ISC",
