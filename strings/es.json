@@ -1,0 +1,22 @@
+{
+	"AboutMessage": "Esta es la API Restful del sistema JsonSchemaValidator",
+
+	"JsonFormatInvalid": "El JSON enviado me ha sido un formato invalido.",
+
+	"SchemaGeneratedSuccess": "Schema generado con éxito.",
+	"JsonGeneratedSuccess": "Json generado con éxito.",
+	"ValidateSuccess": "Json validado con éxito.",
+	"UploadFileSuccess": "Archivo enviado con éxito.",
+
+	"ValidateError": "Json no es valido.",
+	"ValidateKeyNotFoundInSchema": "La clave informada en el objeto no existe en el schema.",
+	"ValidateSchemaIsFormatInvalid": "El schema no está en un formato válido.",
+	"ValidateTypeIsInvalid": "El tipo de datos del objeto no coincide con el tipo de datos del schema.",
+	"ValidateAttributeIsNotNull": "El atributo no está permitido nulo.",
+
+	"HttpNotFound": "Este servicio no se encontró.",
+
+	"ParameterIsNotInformed": "No se encontraron los parámetros esperados.",
+	"ParameterIsNotAObject": "El parámetro informado no es un objeto.",
+	"ParameterIsNotValid": "El parámetro informado no es válido."
+}
