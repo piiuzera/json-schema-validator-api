@@ -26,20 +26,24 @@ var JsonFile = require('jsonfile');
 		return Exception;
 	};
 
-	var _getRequestTestModel = function(Headers, Query, Params) {
+	var _getRequestTestModel = function(Body, Query, Params, Headers) {
 		var Request = {};
-		Request.headers = {};
+		Request.body = {};
 		Request.query = {};
 		Request.params = {};
-
-		if (Headers)
-			Request.headers = Headers;
+		Request.headers = {};
+		
+		if (Body)
+			Request.body = Body;
 
 		if (Query)
 			Request.query = Query;
 
 		if (Params)
 			Request.params = Params;
+
+		if (Headers)
+			Request.headers = Headers;
 
 		return Request;
 	};

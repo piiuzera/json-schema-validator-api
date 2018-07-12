@@ -1,0 +1,15 @@
+{
+	"id": { "type": "number", "required": false },
+	"name": { "type": "string", "required": false },
+	"address" : { "type": "object", "required": false, "values": {
+		"street": { "type": "string", "required": false },
+		"number": { "type": "string", "required": false },
+		"complement": { "type": "string", "required": false },
+		"district": { "type": "string", "required": false },
+		"zipcode": { "type": "string", "required": false },
+		"phones": { "type": "array", "required": false, "values": {
+			"0": { "type": "string", "required": false },
+			"1": { "type": "string", "required": false }
+		}}
+	}}
+}

@@ -28,16 +28,24 @@ var Expect = require('expect.js');
 		Expect(App.routes[0].middlewareCallback).to.be(null);
 		Expect(App.routes[0].routeCallback).to.be.an('function');
 
-		Expect(App.routes[1].uri).to.be('/auth/');
+		Expect(App.routes[1].uri).to.be('/api/generator');
 		Expect(App.routes[1].middlewareCallback).to.be(null);
 		Expect(App.routes[1].routeCallback).to.be.an('function');
+
+		Expect(App.routes[2].uri).to.be('/api/uploadFile');
+		Expect(App.routes[2].middlewareCallback).to.be(null);
+		Expect(App.routes[2].routeCallback).to.be.an('function');
+
+		Expect(App.routes[3].uri).to.be('/api/validator');
+		Expect(App.routes[3].middlewareCallback).to.be(null);
+		Expect(App.routes[3].routeCallback).to.be.an('function');
 
 		/*
 		* Test 404 Not Found Router
 		**/
-		Expect(App.routes[2].uri).to.be.an('function');
-		Expect(App.routes[2].middlewareCallback).to.be(null);
-		Expect(App.routes[2].routeCallback).to.be(undefined);
+		Expect(App.routes[4].uri).to.be.an('function');
+		Expect(App.routes[4].middlewareCallback).to.be(null);
+		Expect(App.routes[4].routeCallback).to.be(undefined);
 
 		Done();
 	};
