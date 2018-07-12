@@ -4,7 +4,7 @@
   "description": "JSON Validator Schema",
   "main": "Server.js",
   "scripts": {
-    "test": "mocha --recursive ./v*/tests/",
+    "test": "mocha -R spec ./v*/tests/**/*.test.js",
     "start": "node Server.js",
     "build": "npm install && npm run test && npm run start"
   },
