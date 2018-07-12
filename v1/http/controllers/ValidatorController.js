@@ -22,6 +22,8 @@ var Validator = require('validatorjs');
 		try {
 			if (typeof Request.body !== 'object')
 				throw Utils.GetThrowException(__('JsonFormatInvalid'), 'JsonFormatInvalid');
+			if (Object.keys(Request.body).length === 0)
+				throw Utils.GetThrowException(__('JsonFormatInvalid'), 'JsonFormatInvalid');
 
 			validateRequestBody(Request.body);
 

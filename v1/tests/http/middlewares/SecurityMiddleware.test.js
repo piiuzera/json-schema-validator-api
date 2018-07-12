@@ -31,7 +31,7 @@ var Expect = require('expect.js');
 
 	var TestVerifyTokenReturnsSuccess = function(Done) {
 		var Token = AuthFactory.SignIn(GetDefaultUser());
-		var Request = Utils.GetRequestTestModel(Utils.GetRequestHeaderAuthorization(Token));
+		var Request = Utils.GetRequestTestModel(null, null, null, Utils.GetRequestHeaderAuthorization(Token));
 		var Response = Utils.GetResponseTestModel();
 
 		SecurityMiddleware.Verify(Request, Response, Utils.GetNextTestModel.bind(Response));

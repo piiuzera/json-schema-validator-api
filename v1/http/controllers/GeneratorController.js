@@ -43,6 +43,9 @@ var Utils = require('../../../environment/Utils');
 		try {
 			if (typeof Request.body !== 'object')
 				throw Utils.GetThrowException(__('JsonFormatInvalid'), 'JsonFormatInvalid');
+			
+			if (Object.keys(Request.body).length === 0)
+				throw Utils.GetThrowException(__('JsonFormatInvalid'), 'JsonFormatInvalid');
 
 			if (Request.query.download)
 				HttpResponse.result = GenerateObjectToBase64(JsonSchemaValidator.GenerateObjectBySchema(Request.body));
